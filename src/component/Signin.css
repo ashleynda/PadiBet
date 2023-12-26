@@ -1,0 +1,166 @@
+@media screen and (max-width: 728px) {
+    .login-page {
+        margin: auto;
+        margin-top: 200px;
+        padding-bottom: 30px;
+    }
+    .signin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 60px;
+    }
+    .signin > p {
+        color: #82A67D;
+        font-family: Exo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .login-form {
+        gap: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;  
+    }
+    .icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: px;
+        position: absolute;
+        box-sizing:border-box;
+        top:50%;
+        left:8px;
+        transform: translateY(-50%);
+        background-color: #F1FAEE;
+    }
+    .username {
+        color: #1D3557;
+        font-family: Exo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 10px;
+        background-color: white;
+        width: 335px;
+        height: 50px;
+        box-sizing:border-box;
+        padding-left: 2.2rem;
+        border: none;   
+        
+    }
+    .password {
+        color: #1D3557;
+        font-family: Exo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 10px;
+        background: white;
+        width: 335px;
+        height: 50px;
+        box-sizing:border-box;
+        padding-left: 2.2rem;
+        border: none;
+    }
+    .private {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: px;
+        position: absolute;
+        box-sizing:border-box;
+        top:50%;
+        right: 8px;
+        transform: translateY(-50%);
+        background-color: #F1FAEE;
+    }
+    .remember {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: -40px;
+    }
+    .for > p {
+        color: white;
+        font-family: Exo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+    }
+    .for {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .log-button {
+        display: flex;
+        width: 335px;
+        padding: 10px 12px 10px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: #82A67D;
+        /* border: 2px solid #82A67D; */
+        color: white;
+        font-family: Exo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 25px;
+        cursor: pointer;
+    }
+    .option {
+        color: white;
+        font-family: Exo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    
+    }
+    .link {
+        border-radius: 10px;
+        background: white;
+        padding: 10px 10px;  
+    }
+    .yet {
+        color: #82A67D;
+        font-family: Exo;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .reg {
+        color: white;
+        font-family: Exo;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+        
+    }

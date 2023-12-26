@@ -1,0 +1,23 @@
+@media screen and (max-width: 728px) {
+    .choose {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 8px;       
+    }
+    .choose1 {
+        background-color: white;
+        height: 39px;
+        
+    }
+    .choose1 img {
+        background-color: white;
+        height: 30px;
+    }
+    .choose1 > p {
+        background-color: white;
+        margin-top: -5px;
+    }
+}

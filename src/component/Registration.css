@@ -1,0 +1,83 @@
+@media screen and (max-width: 728px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 200px;
+        padding-bottom: 30px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .text {
+        color: #82A67D;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .underline {
+        width: 61px;
+        height: 6px;
+        background: white;
+        border-radius: 6px;
+    }
+    .field {
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .input {
+        position: relative;
+        display: flex;
+        align-items: center; 
+        margin: 0px 30px; 
+    }
+    .input img {
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: px;
+        position: absolute;
+        box-sizing:border-box;
+        top:50%;
+        left:8px;
+        transform: translateY(-50%);
+        background-color: white;
+    }
+    .input input {
+        /* color: black; */
+        font-family: Exo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 10px;
+        background-color: white;
+        width: 335px;
+        height: 50px;
+        box-sizing:border-box;
+        padding-left: 2.2rem;
+        border: none; 
+    }
+    .sign-button {
+        display: flex;
+        width: 324px;
+        padding: 10px 12px 10px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: #82A67D;
+        color: white;
+        font-family: Exo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 25px;
+    }
+    }

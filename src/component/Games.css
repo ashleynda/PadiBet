@@ -1,0 +1,95 @@
+@media screen and (max-width: 728px) {
+    .games-container {
+        margin: auto;
+        margin-top: 200px;
+        padding-bottom: 30px;
+    }
+    .header1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .hamburger {
+        padding: 10px 20px;
+        width: 25px;
+        height: 25px;
+        /* fill: rgba(0, 0, 0, 0.00); */
+        color: black;
+    }
+    .notify {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+        gap: 20px;
+    }
+    .sports {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    .spot {
+        /* width: 50px;
+        height: 50px; */
+        border-radius: 10px;
+        background-color: white;
+    }
+    .spot1 {
+        max-width: 50px;
+        border-radius: 10px;
+    }
+    .spot > p {
+        color: black;
+        font-family: Exo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: -8px;
+        background-color: white;
+    }
+    .time {
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+        gap: 40px;    
+        padding: 10px;
+
+          
+    }
+    .time > p{
+        color: #82A67D;
+        font-family: Exo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+           
+    }
+    /* .choose {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 8px;       
+    }
+    .choose1 {
+        background-color: white;
+        height: 39px;
+        
+    }
+    .choose1 img {
+        background-color: white;
+        height: 30px;
+    }
+    .choose1 > p {
+        background-color: white;
+        margin-top: -5px;
+    } */
+    
+}
