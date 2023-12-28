@@ -1,22 +1,56 @@
 import React from 'react'
 import './Registration.css';
+import gg_profile from '../images/gg_profile.png'
+import icons8 from '../images/icons8-email-50.png' 
+import carbon_password from '../images/carbon_password.png'
 
-// const Registration = () => {
+
+
 class Registration extends React.Component {
     state = {
         username: "",
         email: "",
         password: "",
+        signupResponse: ""
     };
-        signUp = (e) => {
-            e.preventDefault();
-            if (this.state.username === "" && this.state.email === "" && this.state.password === "") {
-                alert("All fields are mandatory!");
-                return;                
-            }
+    signup = async (e) => {
+        e.preventDefault();
+        if (this.state.username === "" && this.state.email === "" && this.state.password === "") {
+            alert("All fields are mandatory!");
+            return;                
+        }
             console.log(this.state);
-            this.setState({ username: "", email: "", password: ""});
-        };
+           
+
+        try {
+            const signUpUrl = 'http://localhost:3000/BetMe/registerPlayer';
+            const signupRequest = {
+                username: this.state.username,
+                email: this.state.email,
+                password: this.state.password
+            };
+
+            const response = await fetch(signUpUrl, {
+                method: "POST",
+                body: JSON.stringify(signupRequest),
+                headers: {
+                    'Content-Type': 'application/json, charset=UTF-8'
+                }
+            });
+            const responseObject = await response.json();
+            console.log(responseObject);
+            if(typeof responseObject.data !== 'string'){
+                this.setState({signupResponse: "Sign up successful"});
+                localStorage.setItem('Username', this.state.username)
+            } else {
+                this.setState({signupResponse: responseObject.data});
+            }    
+        } catch(error) {
+            console.log('Error:', error);
+        }
+    };
+
+   
 
     render() {
         return (
@@ -26,9 +60,10 @@ class Registration extends React.Component {
                     <div className="underline"></div>
                 </div>
                 <div className="inputs">
-                    <form className='field' onSubmit={this.signUp}>
+                    <form className='field' onSubmit={this.signup} id='register-part'>
+                        <h3 id='signup-response'>{this.state.signupResponse}</h3>
                         <div className="input">
-                            <img src="./images/gg_profile.png" alt="" />
+                            <img src={gg_profile} alt="" />
                             <input 
                             type="text" 
                             placeholder='Username'
@@ -37,7 +72,7 @@ class Registration extends React.Component {
                             />
                         </div>
                         <div className="input">
-                            <img src="./images/icons8-email-50.png" alt="" />
+                            <img src={icons8} alt="" />
                             <input 
                             type="email"
                             placeholder='Email' 
@@ -46,7 +81,7 @@ class Registration extends React.Component {
                             />
                         </div>
                         <div className="input">
-                            <img src="./images/carbon_password.png" alt="" />
+                            <img src={carbon_password} alt="" />
                             <input 
                             type="password" 
                             placeholder='Password'
@@ -63,5 +98,6 @@ class Registration extends React.Component {
         ); 
     }
 }
+
 
 export default Registration

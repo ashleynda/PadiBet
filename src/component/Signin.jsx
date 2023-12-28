@@ -4,8 +4,8 @@ import Checkbox from './Checkbox.jsx'
 import gg_profile from '../images/gg_profile.png'
 import carbon_password from '../images/carbon_password.png'
 import Vector from '../images/Vector.png'
-import akar-icons_google-fill from '../images/akar-icons_google-fill.png'
-import cib_facebook-f from '../images/cib_facebook-f.png' 
+import akar from '../images/akar-icons_google-fill.png'
+import cib_facebook from '../images/cib_facebook-f.png'
 import bxl_apple from '../images/bxl_apple.png'
 
 const Signin = () => {
@@ -45,8 +45,8 @@ const Signin = () => {
       {/* <div className='options'> */}
         <p className='option'>or login with</p>
         <div className="icon-link">
-          <img className='link' src={akar-icons_google-fill} alt="" />
-          <img className='link' src={cib_facebook-f} alt="" />
+          <img className='link' src={akar} alt="" />
+          <img className='link' src={cib_facebook} alt="" />
           <img className='link' src={bxl_apple} alt="" />
         </div>
         <p className='yet'>Don't have an account yet?<span className='reg'>Register</span></p>

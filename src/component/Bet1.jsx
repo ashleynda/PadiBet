@@ -1,13 +1,15 @@
 import React from 'react'
 import './Bet1.css'
 import Options from './Options'
+import image from '../images/image.png'
+import jpg from '../images/.jpg'
 
 const Bet1 = () => {
   return (
     <div className='bet-page'>
       <div className='top'>
         <h3>My Bets</h3>
-        <img className='arr' src='./images/image.png' />
+        <img className='arr' src={image} />
       </div>
       <div className='hist'>
         <button className='slip'>Bets Slip</button>
@@ -15,7 +17,7 @@ const Bet1 = () => {
       </div>
 
       <div className='mid'>
-        <img src='./images/.jpg' />
+        <img src={jpg} width={280}/>
         <h3>bet-response</h3>
       </div>
 

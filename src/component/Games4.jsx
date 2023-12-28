@@ -1,21 +1,25 @@
 import React from 'react'
 import './Games4.css'
+import image from '../images/image.png'
+import image1 from '../images/image1.png'
+import image2 from '../images/image2.png'
+import image3 from '../images/image3.png'
 
 const Games4 = () => {
   return (
     <div>
       <header>
         <h2>Premier league</h2>
-        <img src='./images/image.png' />
+        <img src={image} />
       </header>
       <div>
         <p>date&time</p>
-        <img src='./images/image(1).png' />
-        <img src='./images/image2.png' />
+        <img src={image1} />
+        <img src={image2} />
       </div>
 
       <div>
-        <img src='./images/image3.png' />
+        <img src={image3} />
       </div>
 
    
