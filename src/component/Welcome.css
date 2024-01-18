@@ -20,6 +20,10 @@
     font-weight: 600px;
     font-style: oblique;
 }
+.welcome-pic {
+    width: 350px;
+    height: 300px;
+}
 .login {
     color: black;
     font-family: Exo;
@@ -53,7 +57,7 @@
     border-radius: 10px;
 }
 .buttons{
-    margin-top: 470px;
+    margin-top: 240px;
     display: flex;
     align-items: center;
     justify-content: center;
